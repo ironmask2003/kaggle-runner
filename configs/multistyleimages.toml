@@ -1,0 +1,14 @@
+[sandbox]
+# Percorsi relativi a questo file, nella cartella Notebooks/configs.
+source = "../../MultiStyleImages/src/pipeline.py"
+project_root = "../../MultiStyleImages"
+requirements = "../../MultiStyleImages/requirements.txt"
+cwd = "entrypoint"
+name = "multistyleimages"
+python = "native"
+gpu = true
+internet = true
+transport = "auto"
+runs_dir = "../runs"
+# Esclude risultati di esecuzioni precedenti, mantenendo le immagini di input.
+exclude = ["src/test_pipeline_*", "src/test_segmentation_output.png"]

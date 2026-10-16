@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaggle-project-sandbox"
+version = "0.2.0"
+description = "Run reusable Python project snapshots locally or on Kaggle"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["kaggle>=1.8,<3"]
+
+[project.scripts]
+kaggle-sandbox = "sandbox.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sandbox*"]
